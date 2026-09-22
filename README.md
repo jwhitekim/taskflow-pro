@@ -27,6 +27,20 @@ cd backend
 ./.venv/bin/python -m pytest -v
 ```
 
+## 화면 워크플로우
+
+1. 목록 화면 — 할 일 추가 폼 + 카드 목록 (status 배지, 마감까지 남은 시간)
+
+   ![목록 화면 (다크 테마)](frontend/screenshots/list.png)
+
+2. 카드 클릭 → 수정 모달 — 전 필드(title/description/status/due_at) 수정 가능
+
+   ![수정 모달](frontend/screenshots/edit-modal.png)
+
+3. 테마 토글 — 우측 상단 버튼으로 라이트/다크 전환, localStorage에 저장
+
+   ![라이트 테마](frontend/screenshots/light-theme.png)
+
 ## 기능 (MVP)
 - 할 일 CRUD 4종: 추가 / 목록 / 수정 / 삭제
 - 상태 분류(`todo` / `in_progress` / `done`) + 마감 시각(`due_at`) 지정 및 표시
