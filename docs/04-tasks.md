@@ -31,20 +31,22 @@
 
 | 단계 | 검증 방법 | 완료 |
 |---|---|---|
-| 1. backend/ 폴더 및 가상환경 준비 | 폴더 생성 확인 | [ ] |
-| 2. 의존성 설치 (5종 한정) | requirements 파일에 5종만 존재 | [ ] |
-| 3. SQLAlchemy 모델 정의 (Task, 필드 7개) | 02-specs.md 필드와 일치 확인 | [ ] |
-| 4. DB 세션/초기화 코드 작성 | 앱 실행 시 SQLite 파일 생성 확인 | [ ] |
-| 5. POST /api/tasks 구현 | 201 응답 + 422(스펙 외 필드) 확인 | [ ] |
-| 6. GET /api/tasks 구현 | 200 응답, description 제외 확인 | [ ] |
-| 7. GET /api/tasks/{id} 구현 | 200/404 응답, description 포함 확인 | [ ] |
-| 8. PUT /api/tasks/{id} 구현 | 200/400/404 응답 확인 | [ ] |
-| 9. DELETE /api/tasks/{id} 구현 | 204/404 응답 확인 | [ ] |
-| 10. pytest로 5개 API 테스트 작성 및 Swagger(/docs) 확인 | 테스트 전부 통과 + Swagger UI 정상 노출 | [ ] |
+| 1. backend/ 폴더 및 가상환경 준비 | 폴더 생성 확인 | [x] |
+| 2. 의존성 설치 (5종 한정) | requirements 파일에 5종만 존재 | [x] |
+| 3. SQLAlchemy 모델 정의 (Task, 필드 7개) | 02-specs.md 필드와 일치 확인 | [x] |
+| 4. DB 세션/초기화 코드 작성 | 앱 실행 시 SQLite 파일 생성 확인 | [x] |
+| 5. POST /api/tasks 구현 | 201 응답 + 422(스펙 외 필드) 확인 | [x] |
+| 6. GET /api/tasks 구현 | 200 응답, description 제외 확인 | [x] |
+| 7. GET /api/tasks/{id} 구현 | 200/404 응답, description 포함 확인 | [x] |
+| 8. PUT /api/tasks/{id} 구현 | 200/400/404 응답 확인 | [x] |
+| 9. DELETE /api/tasks/{id} 구현 | 204/404 응답 확인 | [x] |
+| 10. pytest로 5개 API 테스트 작성 및 Swagger(/docs) 확인 | 테스트 전부 통과 + Swagger UI 정상 노출 | [x] |
 
 ---
 
 ## Phase 3 (프론트): frontend/ HTML+JS+Tailwind → 화면 → API 연결 → git push
+
+Phase 2 완료 (2026-09-22): CRUD API 5개, pytest 10종 통과, 날짜 3필드 UTC ISO 8601 표준 라이브러리로 통일.
 
 | 단계 | 검증 방법 | 완료 |
 |---|---|---|
